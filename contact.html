@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rev2Race</title>
+    <title>Rev2Race | Contact us!</title>
     <link rel="icon" href="Photos/favicon.png">
     <meta name="keywords" content="Auto racing, car race, race, racing trivia, auto racing information, motorsport information, motorsport, Formula 1, racing events, competition">
     <meta name="description" content="Rev2Race is a digital platform designed for auto racing enthusiasts who are new to the sport.">
@@ -12,42 +12,77 @@
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-          document.querySelector('.nav-links').classList.toggle('show');
-        });
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <style>
       body {
         background: url('Photos/Nascar race track.jpg') no-repeat center/cover;
         margin: 0;
-        font-family: Arial, sans-serif;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        /* Ensures text is readable on background */
       }
     </style>
   </head>
   <body>
     <nav class="navbar">
-        <div class="logo-container">
-          <img src="Photos/logowhite.png" alt="Logo" class="logo">
-        </div>
-        
-        <button class="menu-toggle">&#9776;</button> 
-        
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          
-          <li class="dropdown">
-            <a href="#">Formula 1&#9662;</a>
-            <ul class="dropdown-menu">
-              <li><a href="history.html">History</a></li>
-              <li><a href="rules.html">Rules</a></li>
-              <li><a href="teams.html">Teams</a></li>
-              <li><a href="calendar.html">Calendar</a></li>
-            </ul>
-          </li>
-      
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <a href="contact.html" class="contact-btn">Contact Us</a>
+      <div class="logo-container">
+        <img src="Photos/logowhite.png" alt="Logo" class="logo">
+      </div>
+      <button class="menu-toggle">&#9776;</button>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Formula 1&#9662;</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="history.html">History</a>
+            </li>
+            <li>
+              <a href="rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="teams.html">Teams</a>
+            </li>
+            <li>
+              <a href="calendar.html">Calendar</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+      <a href="contact.html" class="contact-btn">Contact us</a>
     </nav>
+    <main class="contact-container">
+      <div class="glass-box">
+        <h2>
+          <b>Contact us!</b>
+        </h2>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+      <div class="socials-box">
+        <p class="stay-connected">Stay Connected!</p>
+        <div class="social-buttons">
+          <a href="https://www.instagram.com/__rev2race__?igsh=OGJ2Z3RtMGl6YmZn" class="btn-social" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/share/1YxUPuC5wc/?mibextid=wwXIfr" class="btn-social" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Rev2Race</p>
+    </footer>
+  </body>
+</html>
