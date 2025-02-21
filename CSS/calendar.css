@@ -145,6 +145,31 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+body {
+  background-color: black; /* Set background to black */
+
+}
+
+.image-container {
+  display: flex;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .calendar-image {
+    width: 90%; /* Makes it smaller on mobile */
+  }
+}
 
 /* Fade in effect */
 body {
