@@ -9,14 +9,14 @@
     <meta name="description" content="Rev2Race is a digital platform designed for auto racing enthusiasts who are new to the sport.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/fdrift.css">
+    <link rel="stylesheet" href="CSS/rules.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-          document.querySelector('.nav-links').classList.toggle('show');
-        });
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('show');
+      });
     </script>
     <style>
       body {
@@ -28,25 +28,141 @@
   </head>
   <body>
     <nav class="navbar">
-        <div class="logo-container">
-          <img src="Photos/logowhite.png" alt="Logo" class="logo">
-        </div>
-        
-        <button class="menu-toggle">&#9776;</button> 
-        
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          
-          <li class="dropdown">
-            <a href="#">Formula 1&#9662;</a>
-            <ul class="dropdown-menu">
-              <li><a href="history.html">History</a></li>
-              <li><a href="rules.html">Rules</a></li>
-              <li><a href="teams.html">Teams</a></li>
-              <li><a href="calendar.html">Calendar</a></li>
-            </ul>
-          </li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <a href="contact.html" class="contact-btn">Contact Us</a>
+      <div class="logo-container">
+        <img src="Photos/logowhite.png" alt="Logo" class="logo">
+      </div>
+      <button class="menu-toggle">&#9776;</button>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Formula 1&#9662;</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="history.html">History</a>
+            </li>
+            <li>
+              <a href="rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="teams.html">Teams</a>
+            </li>
+            <li>
+              <a href="calendar.html">Calendar</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+      <a href="contact.html" class="contact-btn">Contact Us</a>
     </nav>
+    <main>
+      <div>
+        <section class="hero">
+          <section class="hero glass-box">
+            <div id="H1S" class="container-fluid">
+              <h1>
+                <b>Race Weekend Structure </b>
+              </h1>
+              <p>
+              <ol>
+                <li>
+                  <b>Friday:</b> Free Practice 1 & 2 - Teams collect data on car performance.
+                </li>
+                <li>
+                  <b>Saturday:</b>
+                  <ul>
+                    <li>Free Practice 3</li>
+                    <li>
+                      <b>Qualifying:</b>
+                      <ul>
+                        <li>Q1: 20 drivers, bottom 5 eliminated.</li>
+                        <li>Q2: 15 drivers, bottom 5 eliminated.</li>
+                        <li>Q3: Top 10 battle for pole position.</li>
+                      </ul>
+                  </ul>
+                </li>
+                <li>
+                  <b>Sunday:</b> The main Grand Prix with grid positions based on qualifying results.
+                </li>
+                </p>
+                <img src="Photos/weekend.png" alt="model" id="model">
+            </div>
+      </div>
+      <div>
+        </section>
+        <div>
+          <section class="content">
+            <div class="content-item glass-box">
+              <div class="content-text">
+                <h3>
+                  <b>Points System:</b>
+                </h3>
+                <ul>
+                  <li>1st: 25 points</li>
+                  <li>2nd: 18 points</li>
+                  <li>3rd: 15 points</li>
+                  <li>4th: 12 points</li>
+                  <li>5th: 10 points</li>
+                  <li>6th: 8 points</li>
+                  <li>7th: 6 points</li>
+                  <li>8th: 4 points</li>
+                  <li>9th: 2 points</li>
+                  <li>10th: 1 point</li>
+                </ul>
+              </div>
+              <img src="Photos/Mark.png" alt="Tire" class="tire-image">
+            </div>
+            <div class="content-item glass-box">
+              <div class="content-text">
+                <h3>
+                  <b>Tire & Strategy:</b>
+                </h3>
+                <p style="font-size: 14px;">
+                <ul>
+                  <li>Three tire compounds per race: Soft (red), Medium (yellow), Hard (white).</li>
+                  <li>Each driver must use at least two different compounds in dry conditions.</li>
+                  <li>Pit stops play a crucial role in race strategy.</li>
+                </ul>
+                </p>
+              </div>
+              <img src="Photos/tyres.png" alt="tyre" class="tyre-image">
+            </div>
+        </div>
+      </div>
+      <div>
+        <section class="hero">
+          <section class="hero glass-box">
+            <div id="H1S" class="container-fluid">
+              <h1>
+                <b>Safety & Regulations:</b>
+              </h1>
+              <p>
+              <ul>
+                <li>
+                  <b>Flags:</b>
+                  <ul>
+                    <li>Yellow: caution</li>
+                    <li>Red: race stopped</li>
+                    <li>Blue: allow lapping cars to pass</li>
+                    <li>Green: go</li>
+                  </ul>
+                  <li>
+                    <b>DRS:</b> Drag Reduction System - allows drivers to open rear wing to reduce drag and increase speed.
+                  </li>
+                  <li>
+                    <b>Penalties:</b> Time penalties, grid penalties, and disqualification for rule violations.
+                  </li>
+                  </ul>
+                </li>
+                </p>
+                <img src="Photos/flag.png" alt="model2" id="model2">
+            </div>
+      </div>
+        </section>
+        </section>
+      </div>
+    </main>
