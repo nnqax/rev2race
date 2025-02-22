@@ -243,7 +243,7 @@ footer {
   border-radius: 15px;
 }
 .btn-submit {
-  background-color: #007bff; /* Customize button color */
+  background-color: #212529; /* Customize button color */
   color: white;
   border: none;
 }
@@ -256,7 +256,7 @@ footer {
   color: white;
   padding: 10px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 /* Fade out effect */

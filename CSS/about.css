@@ -1,3 +1,50 @@
+
+
+.bebas-neue-regular h1{
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  p{
+    font-size: x-large;
+  }
+  .poppins-thin p{
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.glass-box {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#H1S {
+    text-align: right;
+    margin-left: 200px;
+    margin-bottom: 0;
+}
+
+#model {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+    width: 40%;
+
+}
+
 /* Navbar Styling */
 * {
     margin: 0;
@@ -140,6 +187,83 @@
   .contact-btn:hover {
     background: #391e22;
   }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    max-width: 500px;
+}
+
+.content-image img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    margin-left: 430px;
+    margin-right: 100px;
+    gap: 20px;
+    padding: 20px;
+}
+
+#social a img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /* Fade out effect */
 .fade-out {
   opacity: 0;
